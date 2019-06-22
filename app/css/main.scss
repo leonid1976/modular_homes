@@ -1,0 +1,15 @@
+@import "../../node_modules/font-awesome/scss/font-awesome";
+@import "../../node_modules/normalize-scss/sass/normalize";
+@include normalize();
+
+a.btn {
+  text-decoration: none;
+}
+
+@import 'global/fonts';
+@import 'global/vars';
+@import 'global/base';
+@import 'global/common';
+@import 'global/mixins';
+@import 'section/header';
+@import 'section/mainscreen';

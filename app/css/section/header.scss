@@ -1,0 +1,76 @@
+.header {
+  height: 100vh;
+  position: relative;
+}
+
+.mySlider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #28283d;
+  z-index: -1;
+}
+
+.header-top {
+  background: linear-gradient(rgba(32,48,132,1), rgba(32,48,132,0));
+  height: 96px;
+}
+
+.wrap {
+  display: grid;
+  grid-template-columns: 144px 750px 200px;
+}
+
+.logo_top {
+  height: 64px;
+  align-self: center;
+  
+}
+
+.logo_picture {
+  display: inline-block;
+  margin-top: 4px;
+}
+
+.menu_top {
+  padding: 0 50px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 96px;
+}
+
+.menu a {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.contacts_top {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 14px;
+  text-align: right;
+  color: #ffffff;
+  font-weight: bold;
+  align-items: center;
+  position: relative;
+  
+
+}
+
+.fa-phone {
+  position: absolute;
+  top: 65px;
+  right: 114px;
+  font-size: 14px;
+  font-family: FontAwesome;
+}
+
+
+
+

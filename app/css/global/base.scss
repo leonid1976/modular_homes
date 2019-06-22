@@ -1,0 +1,56 @@
+body {
+  font-family: $ff-main;
+  color: $c-text;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.064em;
+  overflow-x: hidden;
+    
+    
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  display: block;
+}
+
+li {
+    display: inline-block;
+}
+
+a {
+  text-decoration: none;
+}
+
+.clearfix {
+
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+* {
+  transition: all 0.3s ease;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+.bolder {
+  font-weight: bold;
+}
