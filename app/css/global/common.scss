@@ -1,10 +1,36 @@
+body {
+  font-family: $ff-main;
+  color: $c-text;
+  font-size: 16px;
+  line-height: 1.7em;
+  letter-spacing: 0.064em;
+  overflow-x: hidden;    
+}
+
 .container {
   width: 1100px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section {
+  padding: 80px 0px;
+  text-align: center;
 }
 
 .btn {
-  display: block;
+  display: inline-block;
+  font-family: $ff-head-b;
+  font-size: 20px;
+  color: #ffffff;
+  padding: 24px 36px;
+  letter-spacing: 0.180em;
+  &:hover {
+    background-color: #7110ad;
+  }
+  &:active{
+    box-shadow: inset 0px 0px 8px 0px rgba(0, 0, 0, 0.90);
+  }  
 }
 
 .btn-cta {
@@ -12,21 +38,168 @@
 }
 
 h1 {
-  font-family: Tassie-droid-sans-bold;
-  font-weight: bold;
+  font-family: $ff-head-b;
   font-size: 64px;
-  line-height: 64px;
+  line-height: 1.2em;
   letter-spacing: 0.119em;
   color: #ffffff;
   text-align: center;
+  text-shadow: 0px 3px 7px rgba(0, 0, 0, 0.35);
 }
 
+
 h2 {
-    font-family: Tassie-droid-sans-bold;
-    font-weight: bold;
-  
+    font-family: $ff-main-b;
+    font-size: 48px;
+    letter-spacing: 0.119em;
+    color: $c-head; 
+    text-align: center;
+    margin-bottom: 56px;
+    text-transform: uppercase;
 }
 
 h3 {
-  
+  font-size: 24px;
+  font-family: $ff-head-b;
+  line-height: 1.2em;
+  text-align: center;
+  letter-spacing: 0.064em;
 }
+
+.subheading {
+  font-size: 32px;
+  font-family: $ff-head;
+  line-height: 1.2em;
+  text-align: center;
+  margin-bottom: 40px;
+  letter-spacing: 0.119em;
+} 
+
+.read-more {
+  color: $c-link;
+}
+
+.description {
+  text-align: left;
+}
+
+//-----------------humburger-menu-icon------------------//
+
+.cmn-toggle-switch {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 90px;
+  height: 80px;
+  font-size: 0;
+  text-indent: -9999px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: background 0.3s;
+          transition: background 0.3s;
+}
+ 
+.cmn-toggle-switch:focus {
+  outline: none;
+}
+
+
+.cmn-toggle-switch span {
+  display: block;
+  position: absolute;
+  left: 18px;
+  right: 18px;
+  height: 4px;
+  background: white;
+}
+ 
+.cmn-toggle-switch span::before,
+.cmn-toggle-switch span::after {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: white;
+  content: "";
+}
+ 
+.cmn-toggle-switch span::before {
+  top: -16px;
+}
+ 
+.cmn-toggle-switch span::after {
+  bottom: -16px;
+}
+
+
+
+//------------------changing to cross------------//
+
+.cmn-toggle-switch__htx {
+  background-color: transparent;
+}
+ 
+.cmn-toggle-switch__htx span {
+  -webkit-transition: background 0 0.3s;
+          transition: background 0 0.3s;
+}
+ 
+.cmn-toggle-switch__htx span::before,
+.cmn-toggle-switch__htx span::after {
+  -webkit-transition-duration: 0.3s, 0.3s;
+          transition-duration: 0.3s, 0.3s;
+  -webkit-transition-delay: 0.3s, 0;
+          transition-delay: 0.3s, 0;
+}
+ 
+.cmn-toggle-switch__htx span::before {
+  -webkit-transition-property: top, -webkit-transform;
+          transition-property: top, transform;
+}
+ 
+.cmn-toggle-switch__htx span::after {
+  -webkit-transition-property: bottom, -webkit-transform;
+          transition-property: bottom, transform;
+}
+ 
+//----------------- active state (menu opend)-------------//
+
+.cmn-toggle-switch__htx.active {
+  background-color: transparent;
+}
+ 
+.cmn-toggle-switch__htx.active span {
+  background: none;
+}
+ 
+.cmn-toggle-switch__htx.active span::before {
+  top: 0;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+ 
+.cmn-toggle-switch__htx.active span::after {
+  bottom: 0;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+ 
+.cmn-toggle-switch__htx.active span::before,
+.cmn-toggle-switch__htx.active span::after {
+  -webkit-transition-delay: 0, 0.3s;
+          transition-delay: 0, 0.3s;
+}
+
+//--------- end toggle menu------------------------//
+
+

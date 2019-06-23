@@ -1,16 +1,6 @@
-body {
-  font-family: $ff-main;
-  color: $c-text;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0.064em;
-  overflow-x: hidden;
-    
-    
-}
-
 html {
   box-sizing: border-box;
+  width: 100%;
 }
 
 *, *:before, *:after {

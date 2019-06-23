@@ -16,3 +16,10 @@
   top: 50%;
   transform: translateY(-50%);
 }
+
+@mixin font-awesome($content){
+    content: ($content);
+    display: inline-block;
+    font-family: FontAwesome;
+    position: absolute;
+}
