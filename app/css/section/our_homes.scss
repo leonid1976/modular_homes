@@ -1,12 +1,10 @@
-.about {
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: cover;
-  z-index: -1;
+.technology {
+  background-color: #eeeeef;
+  z-index: 1;
 }
 
 
-.about__wrap {
+.technology__wrap {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 30px;
@@ -14,21 +12,22 @@
 
 }
 
-.about__picture {
+.technology__picture {
   background-repeat: no-repeat;
   background-position: top;
-  min-height: 353px;
+  min-height: 272px;
 
 }
 
-.benefit__item {
+.advantage__item {
   width: auto;
   align-self: center;
 }
 
-.benefits__icons {
+.advantages__icons {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-row-gap: 38px;  
   align-content: space-between;
   margin-bottom: 48px;
 
@@ -36,7 +35,7 @@
 
 
 
-.benefit__icon {
+.advantage__icon {
   margin-bottom: 28px;
   text-align: center;
   width: 192px;  
@@ -51,16 +50,17 @@
 @media screen and (max-width: 992px) {
   
   
-.benefit__icon {
+.advantage__icon {
   margin-bottom: 16px;
   }
   
-  .about__wrap {
+  .technology__wrap {
     display: grid;
     grid-template-columns: 1fr;
+    grid-row-gap: 38px;  
   }
   
-  .benefits__icons {
+  .advantages__icons {
     grid-template-columns: 1fr 1fr;
     grid-row-gap: 38px;
   }
@@ -71,13 +71,13 @@
 }
 
 @media screen and (max-width: 580px) {
-  .benefits__icons {
+  .advantages__icons {
     grid-template-columns: 1fr;
   }
   
-  .benefit__icon {
+  .advantage__icon {
   width: 220px;
-}
+  }
   
 }
 

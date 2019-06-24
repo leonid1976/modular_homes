@@ -69,8 +69,8 @@
   &::before {
     @include font-awesome("\f095");
     transform: rotate(270deg);
-    bottom: 12px;
-    right: 115px;
+    bottom: 7px;
+    right: 116px;
     font-size: 14px;
   }
 }
@@ -78,7 +78,6 @@
 
 
 .offer {
- // margin-top: 272px;
   text-align: center;
   @include centerer-xy();
   top: 54%;
@@ -145,16 +144,12 @@ h1 {
       grid-row-start: 1;
       grid-row-end: 2;
         &::before {
-          bottom: 4px;
+          bottom: -1px;
     }
   }
 }
 
 @media screen and (max-width: 992px) {
-  h1 { 
-     font-size: 54px;
-     margin-bottom: 16px;
-  }
   
   .offer__subheading {
     font-size: 32px;
@@ -178,11 +173,6 @@ h1 {
       display: none;
   }  
 
-    h1 { 
-    font-size: 48px;
-      margin-bottom: 16px;
-  }
-  
   .offer__subheading {
     font-size: 28px;
     margin-bottom: 54px;
@@ -192,10 +182,6 @@ h1 {
 }
 
 @media screen and (max-width: 580px) {
-  h1 { 
-    font-size: 36px;
-      margin-bottom: 14px;
-  }
   
   .offer__subheading {
     font-size: 24px;
