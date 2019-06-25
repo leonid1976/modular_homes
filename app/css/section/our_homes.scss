@@ -1,83 +1,201 @@
-.technology {
-  background-color: #eeeeef;
-  z-index: 1;
-}
-
-
-.technology__wrap {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-column-gap: 30px;
-  margin-bottom: 48px;
+.our-homes {
 
 }
 
-.technology__picture {
+//---------------Home picture------------------//
+
+.home__picture_wrap {
+  width: 355px;
+  height: 220px;
+  display: inline-block;
+  overflow: hidden;
+  position: relative;  
+  cursor: pointer;  
+}
+
+.home__picture {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: top;
-  min-height: 272px;
-
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+    &::before {
+      content: "";
+      display: none;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: rgba(52,73,94,0.40);
+      z-index: 2px;
+    }  
 }
 
-.advantage__item {
-  width: auto;
-  align-self: center;
+
+.home__picture_wrap .home__name {
+    display: none;
+    font-size: 35px;
+    color: #ffffff !important;
+    font-family: sans-serif;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 50px;
+    cursor: pointer;
+    z-index: 3;
 }
 
-.advantages__icons {
+.home__picture_wrap:hover .home__picture,
+.home__picture_wrap:focus .home__picture{
+  transform: scale(1.2);
+  &::before {
+      display: block;
+  }
+}
+  
+.home__picture_wrap:hover .home__name,
+.home__picture_wrap:focus .home__name {  
+    display: block;
+  }
+  
+ 
+//---------------Home picture end------------------//
+
+
+.homes__wrap {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-row-gap: 38px;  
-  align-content: space-between;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 1px;
+  grid-row-gap: 1px;  
   margin-bottom: 48px;
+  background-color: #bdbdbc;
+  width: 1109px;
+}
 
+.home__item {
+  display: block;
+  width: 369px;
+  background-color: #ffffff;
+  padding-bottom: 3px;
+  padding-top: 7px;
+  
+}
+
+.icons {
+  width: 355px;
+  height: 39px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-center;
+  margin: 0 auto;
+  background-color: #ffffff;
+  margin-top: -7px;
+  padding: 10px 3px;
+
+  
+}
+
+.home__icon {
+
+  
+  
+}
+
+.icon__number {
+  font-family: $ff-main-b;
 }
 
 
-
-.advantage__icon {
-  margin-bottom: 28px;
-  text-align: center;
-  width: 192px;  
+.degree {
+  font-size: 11px;
+  font-family: $ff-main-b;
+  line-height: 0.5em;
+  vertical-align: super;
 }
+
+.square .icon__number {
+    position: relative;
+    bottom: 2px;
+    margin-left: 1px;
+}
+
+
 
 
 
 @media screen and (max-width: 1200px) {
-
-}
-
-@media screen and (max-width: 992px) {
-  
-  
-.advantage__icon {
-  margin-bottom: 16px;
+  .our-homes .container {
+    width: 779px;
+    margin: 0 auto;
   }
   
-  .technology__wrap {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-row-gap: 38px;  
-  }
-  
-  .advantages__icons {
+  .homes__wrap{  
     grid-template-columns: 1fr 1fr;
-    grid-row-gap: 38px;
+    width: 739px;    
   }
+
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 805px) {
+  .our-homes .container {
+    width: 100%; 
+  }
   
+  .homes__wrap{ 
+    padding-top: 60px;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    width: 100%; 
+    grid-auto-rows: 375px;
+    background-color: #ffffff;       
+
+  } 
+  
+  .home__item {
+    border-bottom: solid 1px #bdbdbc; 
+    transform: scale(1.4);
+    height: 268px;
+  }   
 }
 
 @media screen and (max-width: 580px) {
-  .advantages__icons {
-    grid-template-columns: 1fr;
-  }
+   .homes__wrap{ 
+    padding-top: 0px;
+    grid-auto-rows: 270px;
+  } 
   
-  .advantage__icon {
-  width: 220px;
-  }
+  .home__item {
+    transform: scale(1);
+  }  
   
 }
 
+
+@media screen and (max-width: 410px) {
+
+  .our-homes h2 {
+    margin-bottom: 20px;  
+  }
+  
+   .homes__wrap{ 
+     display: grid;
+     grid-auto-rows: 200px;
+     margin-bottom: 70px;
+     margin: 0 auto;
+     justify-content: center; 
+     margin-bottom: 75px;
+  } 
+  
+  .home__item {
+    transform: scale(0.8);
+  }  
+  
+}
