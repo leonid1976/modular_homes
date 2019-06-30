@@ -22,22 +22,33 @@ section {
   display: inline-block;
   font-family: $ff-head-b;
   font-size: 20px;
-  color: #ffffff;
   padding: 24px 36px;
   letter-spacing: 0.180em;
   cursor: pointer;
-  &:hover {
-    background-color: #7110ad;
-  }
-  &:active{
-    box-shadow: inset 0px 0px 8px 0px rgba(0, 0, 0, 0.90);
-  }  
 }
 
 
 .btn-cta {
   background-color: $c-accent;
+  color: #ffffff;  
+    &:hover {
+      background-color: #7110ad;
+    }
+    &:active{
+      box-shadow: inset 0px 0px 8px 0px rgba(0, 0, 0, 0.90);
+    }    
 }
+
+.btn-host {
+  background-color: #ffffff;
+  border: 1px solid #292deb;
+  color: #292deb;
+    &:hover, &:active {
+      background-color: #292deb;
+      color: #ffffff;
+    }  
+}
+
 
 a.btn {
   text-decoration: none;
