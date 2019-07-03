@@ -61,6 +61,7 @@
   display: flex;
   justify-content: flex-end;
   font-size: 14px;
+  line-height: 22px;  
   text-align: right;
   color: #ffffff;
   font-weight: bold;
@@ -69,7 +70,7 @@
   &::before {
     @include font-awesome("\f095");
     transform: rotate(270deg);
-    bottom: 7px;
+    bottom: 14px;
     right: 116px;
     font-size: 14px;
   }
@@ -144,7 +145,7 @@ h1 {
       grid-row-start: 1;
       grid-row-end: 2;
         &::before {
-          bottom: -1px;
+          bottom: 6px;
     }
   }
 }

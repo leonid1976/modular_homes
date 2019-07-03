@@ -1,0 +1,201 @@
+.contact_us {
+  height: 962px;
+  padding: 0;
+}
+
+.map {
+  width: 100%;
+  height: 100%;
+}
+
+.contacts {
+  padding: 56px 65px;
+  background-color: #ffffff;
+  width: 444px;
+  position: absolute;
+  left: 50%;
+  top: 80px;
+  transform: translateX(-555px);  
+}
+
+.contacts__heading {
+  font-size: 32px;
+  margin-bottom: 24px;
+}
+
+.contacts__subheading {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.details__adress, .details__phone, .details__email {
+  margin-bottom: 12px;
+}
+
+
+
+.details__phone {
+  position: relative;
+  &::before {
+  @include font-awesome("\f095");
+  transform: rotate(270deg);
+  display: block;  
+  position: absolute;
+  bottom: 0px;
+  right: 221px;
+  font-size: 15px;
+  }
+}
+
+.details__email {
+  position: relative;
+  &::before {
+  @include font-awesome("\f0e0");
+  position: absolute;
+  display: block;   
+  bottom: 0px;
+  right: 264px;
+  font-size: 15px; 
+  }
+}
+
+.details__social-media {
+  width: 100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  color: #292deb;
+  font-size: 18px;
+  margin-bottom: 24px;
+}
+
+.social__icon {
+  color: #292deb;
+  font-size: 18px;
+}
+
+.contact-form__subheading  {
+  font-size: 24px;
+  margin-bottom: 32px;
+}
+
+.form__field {
+    margin-bottom: 16px;
+    position: relative;
+  }
+
+.form__field:nth-child(4) {
+  margin-bottom: 40px;
+}
+
+input, textarea {
+  border: 0px;
+  outline: 0px;
+  border-bottom: 1px solid #06020b;
+  height: 36px; 
+  padding: 6px;
+  padding-top: 14px;
+  width: 314px;
+  background-color: transparent;
+  overflow-y: hidden;    
+}
+
+.field__name {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    color: #8b8b8b;
+    background-color: #ffffff;
+    z-index: -1; 
+  }
+
+
+input:not(:placeholder-shown) , textarea:not(:placeholder-shown) {
+     border: 1px solid #c7c7cd;
+     border-bottom-color: $c-text;   
+  }
+
+input:focus, textarea:focus {
+   background: #f6f6f7; 
+   border: 1px solid #c7c7cd;
+}
+
+
+input:focus+.field__name, input:not(:placeholder-shown)+.field__name, textarea:focus+.field__name, textarea:not(:placeholder-shown)+.field__name {
+  top: -8px;
+  left: 6px;
+  font-size: 12px;
+  opacity: 1;
+  z-index: 2;  
+  padding: 0px 2px;
+  line-height: 12px;
+}
+
+input::placeholder, textarea::placeholder {
+opacity: 0;
+}
+
+textarea:not(:placeholder-shown) {
+  height: 120px;
+}
+
+textarea:focus{
+  height: 120px;
+}
+
+input.submit {
+  display: inline-block;
+  font-family: $ff-main;
+  font-size: 16px;
+  padding: 16px 36px;
+  letter-spacing: 0.180em;
+  cursor: pointer;
+  background-color: #ffffff;
+  border: 1px solid #292deb;
+  color: #292deb; 
+  width: 160px;
+  height: inherit;
+  
+      &:hover, &:active {
+      background-color: #292deb;
+      color: #ffffff;
+    }  
+}
+
+
+@media screen and (max-width: 1200px) {
+  
+  .map {
+    background-position: center;
+  }
+  
+  .contacts {
+    left: 2%;
+    transform: translateX(0px);     
+
+
+  }
+  
+  
+}
+
+@media screen and (max-width: 992px) {
+  
+
+}
+
+@media screen and (max-width: 768px) {
+  
+}
+
+@media screen and (max-width: 580px) {
+
+}
+
+
+
+
+
+
+
+

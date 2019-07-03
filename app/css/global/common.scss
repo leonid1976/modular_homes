@@ -16,11 +16,11 @@ body {
 section {
   padding: 80px 0px;
   text-align: center;
+  position: relative;
 }
 
 .btn {
   display: inline-block;
-  font-family: $ff-head-b;
   font-size: 20px;
   padding: 24px 36px;
   letter-spacing: 0.180em;
@@ -30,6 +30,7 @@ section {
 
 .btn-cta {
   background-color: $c-accent;
+  font-family: $ff-main-b;  
   color: #ffffff;  
     &:hover {
       background-color: #7110ad;
@@ -40,8 +41,10 @@ section {
 }
 
 .btn-host {
+  font-family: $ff-main;  
   background-color: #ffffff;
   border: 1px solid #292deb;
+  padding: 20px 36px;  
   color: #292deb;
     &:hover, &:active {
       background-color: #292deb;
