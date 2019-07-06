@@ -10,10 +10,20 @@
   bottom: 0;
   right: 0;
   background-color: #28283d;
-  z-index: -1;
+  z-index: -2;
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .35);
+  
 }
 
 .header-top {
@@ -21,7 +31,7 @@
   height: 96px;
 }
 
-.wrap {
+.header__wrap {
   display: grid;
   grid-template-columns: 144px 750px 200px;
   grid-auto-row: 96px;
@@ -37,8 +47,6 @@
 .logo_picture {
   display: inline-block;
   margin-top: 7px;
-
-
 }
 
 .menu_top {
@@ -55,7 +63,25 @@
 .menu a {
   color: #ffffff;
   font-weight: bold;
+  position: relative;
+  &::after{
+    content: '';
+    height: 2px;
+    width: 100%;
+    display: none;
+    color: #ffffff;
+    position: absolute;
+    background-color: #ffffff;
+    bottom: -3px;
+  }
 }
+
+.menu a:hover {
+    &::after{
+    display: block;      
+  }
+}
+
 
 .contacts_top {
   display: flex;
@@ -120,7 +146,7 @@ h1 {
   
 
   
-  .wrap {
+  .header__wrap {
   display: grid;
   grid-template-columns: 0.5fr 3fr 2fr;
   }
@@ -159,7 +185,7 @@ h1 {
 }
 
 @media screen and (max-width: 768px) {
-    .wrap {
+    .header__wrap {
       grid-template-columns: 1fr 2fr;
     }
   
@@ -189,6 +215,35 @@ h1 {
     margin-bottom: 54px;
   }
   
+  .contacts_top {
+        &::before {
+          bottom: 2px;
+    }
+  }
+  
+  
+  .offer {
+    padding-right: 20px;
+    padding-left: 20px;
+  }  
+  
 }
+
+@media screen and (max-height: 500px) {
+
+  
+  h1 {
+    font-size: 34px;
+  }
+  
+  .offer__subheading {
+    display: none;
+  }
+    
+  .btn {
+    padding: 18px 24px;
+  }
+}
+
 
 

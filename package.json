@@ -1,0 +1,40 @@
+{
+  "name": "modular_homes",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/%16leonid1976/modular_homes.git"
+  },
+  "author": "Leonid Gaidarenko",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "latest",
+    "font-awesome": "^4.7.0",
+    "gulp": "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-clean-css": "latest",
+    "gulp-imagemin": "latest",
+    "gulp-rigger": "latest",
+    "gulp-sass": "latest",
+    "gulp-sourcemaps": "latest",
+    "gulp-uglify": "latest",
+    "gulp-watch": "latest",
+    "imagemin-pngquant": "latest",
+    "main-files": "latest",
+    "normalize-scss": "^7.0.1",
+    "normalize.css": "^8.0.1",
+    "rimraf": "latest"
+  },
+  "bugs": {
+    "url": "https://github.com/%16leonid1976/modular_homes/issues"
+  },
+  "homepage": "https://github.com/%16leonid1976/modular_homes#readme",
+  "description": "",
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.9.0"
+  }
+}

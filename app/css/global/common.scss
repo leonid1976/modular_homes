@@ -13,11 +13,36 @@ body {
   margin-right: auto;
 }
 
+.page-container {
+  background-color: #ffffff;
+  width: 1110px;
+  margin: 0 auto;
+  padding: 80px 40px;
+  border-right: 1px solid #e6e5e5;
+  border-left: 1px solid #e6e5e5;    
+  margin-top: -260px;
+}
+
+
 section {
   padding: 80px 0px;
   text-align: center;
   position: relative;
 }
+
+.content {
+  padding: 0;
+  display: flex;
+}
+
+.wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 40px;
+    margin-bottom: 52px;
+  }
+
 
 .btn {
   display: inline-block;
@@ -99,6 +124,7 @@ h3 {
 .read-more {
   color: $c-link;
   font-family: $ff-main-b;
+  cursor: pointer;
 }
 
 .description {
@@ -226,12 +252,22 @@ h3 {
 
 
 
+@media screen and (max-width: 1120px) {
+  .page-container {
+    width: 100%;
+  }
+}
 
 @media screen and (max-width: 992px) {
   h1 { 
      font-size: 54px;
      margin-bottom: 16px;
   }
+  
+  .page-container {
+    padding: 80px 20px;
+  }  
+  
 }
 
 
@@ -240,6 +276,10 @@ h3 {
     h1 { 
     font-size: 48px;
       margin-bottom: 16px;
+  }
+  
+  .wrap {
+      grid-template-columns: 1fr;
   }
 }
 
@@ -260,9 +300,45 @@ h3 {
   
   h3 {
       font-size: 20px;
-  }  
+  }
+  
+.cmn-toggle-switch {
+  width: 80px;
+  height: 70px;  
   
 }
+  
+.cmn-toggle-switch span {
+  height: 3px;
+}
+  
+.cmn-toggle-switch span::before,
+.cmn-toggle-switch span::after {
+  height: 3px;
+}
+ 
+.cmn-toggle-switch span::before {
+  top: -14px;
+}
+ 
+.cmn-toggle-switch span::after {
+  bottom: -14px;
+}  
+
+}
+
+@media screen and (max-height: 500px) {
+        
+  .page-container {  
+    margin-top: -60px;
+  }
+      
+    h2 {
+        font-size: 30px;
+  }
+}
+
+
 
 
 

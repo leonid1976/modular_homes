@@ -9,9 +9,15 @@
 @import 'global/base';
 @import 'global/common';
 @import 'global/mixins';
-@import 'section/header';
-@import 'section/about_us';
-@import 'section/technology';
-@import 'section/our_homes';
-@import 'section/gallery';
-@import 'section/contacts';
+@import 'section/_header';
+@import 'section/_about_us';
+@import 'section/_technology';
+@import 'section/_our_homes';
+@import 'section/_gallery';
+@import 'section/_contacts';
+@import 'section/_footer';
+
+
+@import 'pages/about-us';
+@import 'pages/technology';
+
