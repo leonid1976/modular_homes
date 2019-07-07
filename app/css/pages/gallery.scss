@@ -1,0 +1,66 @@
+.gallery-page .heading__btn {
+    display: none;
+  }
+
+
+  .gallery-page .mySlider {
+    background-image: url('../img/gallery main screenbackground3.jpg') !important;
+  }
+
+.gallery-page .offer {
+  top: 40%;
+}
+
+.galllery-page .page-container {
+  //padding-bottom: 40px;
+}
+
+.gallery-page .subheading {
+ //   margin-bottom: 30px;
+}
+
+.gallery-page .gallery__picture_wrap {
+  width: 329px;
+}
+
+.gallery__picture {
+  background-position: center;
+}
+
+
+.gallerys__wrap {
+  width: 100%;
+  
+}
+
+.gallery-page .gallery__item {
+  width: 344px;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+ .gallery-page .gallerys__wrap{  
+    width: 685px;
+    margin: 0 auto;   
+  }
+
+}
+
+@media screen and (max-width: 805px) {
+
+  .gallery-page .gallerys__wrap{ 
+    width: 100%; 
+  } 
+  
+}
+
+@media screen and (max-width: 580px) {
+
+}
+
+
+@media screen and (max-width: 410px) {
+
+  
+}

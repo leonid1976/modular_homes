@@ -1,0 +1,130 @@
+.our-homes-page .heading__btn {
+    display: none;
+  }
+
+
+  .our-homes-page .mySlider {
+    background-image: url('../img/our-homes main screenbackground.jpg') !important;
+  }
+
+.our-homes-page .offer {
+  top: 44%;
+}
+
+.our-homes-page .page-container {
+  padding-bottom: 40px;
+}
+
+.our-homes-page .subheading {
+    margin-bottom: 30px;
+}
+
+.form-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 -20px;
+  align-items: flex-end;
+  margin-bottom: 52px;
+
+}
+
+.form-wrap div:nth-child(4) {
+  width: 100%;
+  margin: 0 20px;  
+}
+
+
+.form__field-homes {
+  width: 100%;
+  margin: 0 20px;  
+}
+
+.select-homes {
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+//  border: none;
+  /* delate arrow*/
+  /*for WebKit*/
+  -webkit-appearance: none;
+  /* for FF */
+  -moz-appearance: none;
+  text-indent: 0.01px;
+  text-overflow: '';
+  /* for IE */
+  -ms-appearance: none;
+  appearance: none !important;
+  background-image: url('../img/arrow-down.png'); /* "фоновая" картинка была из 2х стрелочек, чтобы была вверх и вниз и менялась - надо подумать...  */
+  background-position: right center;
+  background-repeat: no-repeat;  
+  transition: all 0s;
+  color: #595959;
+  
+}
+
+.field__name-homes {
+    z-index: 1; 
+}
+
+input.submit {
+  padding: 16px 10px;
+  width: 190px;
+}
+
+
+.our-homes-page .home__picture_wrap {
+  width: 329px;
+}
+
+.home__picture {
+  background-position: center;
+}
+
+
+.our-homes-page .homes__wrap {
+  width: 100%;
+}
+
+.our-homes-page .home__item {
+  width: 342px;
+}
+
+.our-homes-page .icons {
+  width: 329px;
+}
+
+@media screen and (max-width: 1200px) {
+ .our-homes-page .homes__wrap{  
+    width: 685px;
+    margin: 0 auto;   
+  }
+
+}
+
+@media screen and (max-width: 805px) {
+
+  .our-homes-page .homes__wrap{ 
+    width: 100%; 
+  } 
+  
+  .form-wrap {
+    padding-left: 22%;
+    padding-right: 22%;
+    flex-wrap: wrap;
+  }
+  
+  input.submit {
+    margin-top: 38px;
+
+  }  
+}
+
+@media screen and (max-width: 580px) {
+
+}
+
+
+@media screen and (max-width: 410px) {
+
+  
+}

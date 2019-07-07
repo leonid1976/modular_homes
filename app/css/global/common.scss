@@ -131,6 +131,46 @@ h3 {
   text-align: left;
 }
 
+//----------------form----------------------------------//
+
+input, select, textarea {
+  border: 0px;
+  outline: 0px;
+  border-bottom: 1px solid #06020b;
+  height: 36px; 
+  padding: 6px;
+  padding-top: 14px;
+  background-color: transparent;
+  overflow-y: hidden;    
+}
+
+.field__name {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    color: #8b8b8b;
+    background-color: #ffffff;
+    z-index: -1; 
+  }
+
+input.submit {
+  display: inline-block;
+  font-family: $ff-main;
+  font-size: 16px;
+  padding: 16px 36px;
+  letter-spacing: 0.180em;
+  cursor: pointer;
+  background-color: #ffffff;
+  border: 1px solid #292deb !important;
+  color: #292deb;   
+      &:hover, &:active {
+      background-color: #292deb;
+      color: #ffffff;
+    }  
+}
+
+
+
 //-----------------humburger-menu-icon------------------//
 
 .cmn-toggle-switch {
