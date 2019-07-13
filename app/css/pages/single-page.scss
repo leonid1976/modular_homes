@@ -1,0 +1,259 @@
+/*======================<single-page>==================*/
+.single-page section{
+  text-align: left;
+}
+
+
+.heading__wrap {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.single-page__heading {
+  font-size: 32px;
+  font-family: $ff-head;
+  color: #060206;
+  text-align: left;
+}
+
+.breadcrumbs a {
+  color: #292deb;
+  font-family: $ff-main-b;
+}
+
+.single-page__wrap {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-column-gap: 30px;
+  margin-bottom: 56px;
+
+}
+
+.single-page__pucture {
+  height: 480px;
+  width: 730px;
+}
+
+.single-page__description {
+  
+}
+
+.single-page-subtitle {
+  font-family: $ff-head;
+  font-size: 24px;
+  margin-bottom: 34px;
+}
+
+.single-page__description .single-page-subtitle {
+  text-align: left;
+}
+
+.description__data {
+  margin-bottom: 26px;
+}
+
+.description__data td:last-child {
+  width: 60px;
+  text-align: right;
+}
+
+.description__data .degree {
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.price-box {
+  border: 2px solid $c-head;
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 170px;
+  text-align: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-bottom: 34px;
+  
+}
+
+.price-box .price {
+  color: $c-head;
+  font-size: 18px;
+}
+
+.plans {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 56px;
+}
+
+.plan__item_picture {
+  width: 500px;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.specification {
+  margin-bottom: 56px;  
+}
+
+.specification-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 20px
+}
+
+.single-page .homes__wrap {
+  margin-bottom: 0;
+  text-align: center;
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 66px;
+    left: -24px;
+    z-index: 2;
+    display: block;
+    height: 0;
+    width: 0;
+    border-top: 60px solid transparent;
+    border-bottom: 60px solid transparent;
+    border-right: 25px solid $c-head;
+    cursor: pointer;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    top: 66px;
+    right: -24px;
+    z-index: 2;
+    display: block;
+    height: 0;
+    width: 0;
+    border-top: 60px solid transparent;
+    border-bottom: 60px solid transparent;
+    border-left: 25px solid $c-head;  
+    cursor: pointer;    
+  }
+}
+
+.homes__wrap .degree {
+  font-size: 12px;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1200px) {
+  .single-page__wrap {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 0px;
+    margin-bottom: 56px;
+}
+  
+  .single-page__pucture {
+    margin-bottom: 40px;
+  }
+  
+  .single-page-subtitle {
+    width: 50%;
+  }
+  
+  
+  .single-page .homes__wrap {
+    display: block;
+    width: 369px;
+    margin: 0 auto;
+  }
+ 
+  .single-page .home__item {
+    display: none;
+  }    
+  .single-page .home__item:nth-child(1) {
+    display: block;
+  }  
+  
+.plans {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 8px;
+  margin-bottom: 56px;
+}  
+  
+  .plan__item {
+    margin: 0 auto;
+  }
+  
+ .single-page__description .single-page-subtitle {
+    width: 50%;
+  }
+  
+  .single-page-subtitle {
+        width: 100%;
+  }
+  
+  .single-page section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .single-page__wrap {
+    grid-row-gap: 0px;
+  }
+
+  
+  .single-page__pucture {
+    width: 600px;
+    height: 400px;
+    justify-self: start;
+    background-size: 90%;
+    background-repeat: no-repeat;
+  }
+
+}
+
+@media screen and (max-width: 805px) {
+  .single-page .homes__wrap {
+  &::before {
+    top: 120px;
+    left: -96px;
+  }
+  &::after {
+    top: 120px;
+    right: -96px;
+  }
+}
+  
+
+}
+
+@media screen and (max-width: 660px) {
+  .single-page__pucture {
+    width: 400px;
+    height: 300px;
+    background-size: 90%;
+  }
+  
+  .specification-columns {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 580px) {
+
+}
+
+
+@media screen and (max-width: 410px) {
+
+  
+}
+
+/*======================<single page end>==================*/

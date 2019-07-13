@@ -1,3 +1,5 @@
+/*======================<gallery>==================*/
+
 .gallery-page .heading__btn {
     display: none;
   }
@@ -6,6 +8,10 @@
   .gallery-page .mySlider {
     background-image: url('../img/gallery main screenbackground3.jpg') !important;
   }
+
+.gallery-page  .content {
+  background-color: #eeeeef;
+}
 
 .gallery-page .offer {
   top: 40%;
@@ -64,3 +70,5 @@
 
   
 }
+
+/*======================<gallery end>==================*/
