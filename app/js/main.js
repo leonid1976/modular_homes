@@ -30,6 +30,7 @@ function animateLogo() {
   
   let iconsElements = document.getElementsByClassName('icon');
   window.addEventListener('scroll', handleScroll);
+ // console.dir(iconsElements);
   
   let icons = Array.prototype.slice.call(iconsElements);
   let delay = 0;
@@ -43,6 +44,9 @@ function animateLogo() {
 
       let delayFrame = `${delay/3}s`;
       let delayInner = `${delay/3 + 0.5}s`;
+      
+   //   alert(delayFrame);
+   //   alert(delayInner);
 
       iconFrame.style.transitionDelay = delayFrame;
       iconInner.style.transitionDelay = delayInner;
@@ -59,7 +63,7 @@ function animateLogo() {
           let aboutY = icons[i].getBoundingClientRect().top;
         if(aboutY < 500) {
           animateIcon(icons[i],delay);   
-          if(delay>3) delay = 0;
+          if(i == 3) delay = 0;
           delay++;
           icons.splice(i, 1);
           i--;

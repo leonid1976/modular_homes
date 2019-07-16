@@ -94,7 +94,7 @@
 }
 
 
-.main-page #logo__left.logo__animation {
+.main-page #logo__left {
   transform: translateX(-200px);
   transition: all 0.5s ease 0.5s;  
 }
@@ -104,7 +104,7 @@
   opacity: 1;  
 }
 
-.main-page #logo__high.logo__animation {
+.main-page #logo__high {
    transform: translateY(-100px);
    transition: all 0.5s ease 1s;
 }

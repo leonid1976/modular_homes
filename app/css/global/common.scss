@@ -181,6 +181,8 @@ input.submit {
 
 //---------------- Icon animation ----------------------//
 
+
+
 .icon__frame {
   transform-origin: 50% 50%;
   transform: scale(0);
@@ -201,7 +203,9 @@ input.submit {
   opacity: 1;
 }
 
-
+.advantage__icon {
+  height: 192px;
+}
 
 //-----------------humburger-menu-icon------------------//
 
