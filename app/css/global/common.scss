@@ -131,6 +131,16 @@ h3 {
   text-align: left;
 }
 
+.isVisible {
+  opacity: 1;
+}
+
+.noAcive {
+  display: none;
+}
+
+
+
 //----------------form----------------------------------//
 
 input, select, textarea {
@@ -167,6 +177,28 @@ input.submit {
       background-color: #292deb;
       color: #ffffff;
     }  
+}
+
+//---------------- Icon animation ----------------------//
+
+.icon__frame {
+  transform-origin: 50% 50%;
+  transform: scale(0);
+  
+}
+
+.icon__frame.active {
+  transform: scale(1);
+}
+
+
+.icon__inner {
+  opacity: 0;
+  transition-property: opacity;
+}
+
+.icon__inner.active {
+  opacity: 1;
 }
 
 
