@@ -5,7 +5,8 @@ document.addEventListener('DOMContentLoaded', function() {
  },60)
 }, false);
 
-
+let toggleButton = document.querySelector(".cmn-toggle-switch__htx");
+toggleButton.addEventListener("click", toggleMenu);
 
 
 function animateLogo() {
@@ -61,9 +62,9 @@ function animateLogo() {
     } else {
         for(let i = 0; i < icons.length; i++) {
           let aboutY = icons[i].getBoundingClientRect().top;
-        if(aboutY < 500) {
+        if(aboutY < 700) {
           animateIcon(icons[i],delay);   
-          if(i == 3) delay = 0;
+/*          if(i == 3) delay = 0; */
           delay++;
           icons.splice(i, 1);
           i--;
@@ -72,6 +73,22 @@ function animateLogo() {
     }
   }
 })();
+
+
+function toggleMenu() {
+
+  let logoElement = document.querySelector(".logo");
+  
+  if(this.classList.contains("active")) {
+      this.classList.remove("active");  //change button to normal 
+      logoElement.classList.remove("noActive");  //show logo  
+  } else {
+      this.classList.add("active");   //change button to cross
+      logoElement.classList.add("noActive");  //hide logo
+  }
+  
+
+} 
 
 
 

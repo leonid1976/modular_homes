@@ -12,7 +12,7 @@
   bottom: 0;
   right: 0;
   background-color: #28283d;
-  z-index: -2;
+  z-index: -3;
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
@@ -29,6 +29,7 @@
 }
 
 .header-top {
+  position: relative;
   background: linear-gradient(rgba(32,48,132,1), rgba(32,48,132,.8), rgba(32,48,132,0.5), rgba(32,48,132,0));
   height: 96px;
 }
@@ -50,35 +51,6 @@
   display: inline-block;
   margin-top: 7px;
 }
-
-/*--------------animate logo----------------*/
-
-/*@keyframes logoHighAnimation {
-   from { opacity: 0;
-          transform: translateY(-100px);
-        }
-   to { opacity: 1;
-       transform: translateY(0px);
-        }
-}
-
-@keyframes logoleftAnimation {
-   from { opacity: 0;
-          transform: translateX(-200px);
-        }
-   to { opacity: 1;
-       transform: translateX(0px);
-        }
-}
-
-@keyframes logoRightAnimation {
-   from { opacity: 0;
-        }
-   to { opacity: 1;
-        }
-}*/
-
-
 
 
 .main-page .logo__animation {
@@ -127,6 +99,128 @@
 
 /*--------------animate logo end----------------*/
 
+
+//-----------------humburger-menu-icon------------------//
+
+.cmn-toggle-switch {
+  display: block;
+  position: relative;
+  z-index: 5;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 90px;
+  height: 80px;
+  font-size: 0;
+  text-indent: -9999px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: background 0.3s;
+          transition: background 0.3s;
+}
+ 
+.cmn-toggle-switch:focus {
+  outline: none;
+}
+
+
+.cmn-toggle-switch span {
+  display: block;
+  position: absolute;
+  left: 18px;
+  right: 18px;
+  height: 4px;
+  background: white;
+}
+ 
+.cmn-toggle-switch span::before,
+.cmn-toggle-switch span::after {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: white;
+  content: "";
+}
+ 
+.cmn-toggle-switch span::before {
+  top: -16px;
+}
+ 
+.cmn-toggle-switch span::after {
+  bottom: -16px;
+}
+
+
+
+//------------------changing to cross------------//
+
+.cmn-toggle-switch__htx {
+  background-color: transparent;
+}
+ 
+.cmn-toggle-switch__htx span {
+  -webkit-transition: background 0 0.3s;
+          transition: background 0 0.3s;
+}
+ 
+.cmn-toggle-switch__htx span::before,
+.cmn-toggle-switch__htx span::after {
+  -webkit-transition-duration: 0.3s, 0.3s;
+          transition-duration: 0.3s, 0.3s;
+  -webkit-transition-delay: 0.3s, 0;
+          transition-delay: 0.3s, 0;
+}
+ 
+.cmn-toggle-switch__htx span::before {
+  -webkit-transition-property: top, -webkit-transform;
+          transition-property: top, transform;
+}
+ 
+.cmn-toggle-switch__htx span::after {
+  -webkit-transition-property: bottom, -webkit-transform;
+          transition-property: bottom, transform;
+}
+ 
+//----------------- active state (menu opend)-------------//
+
+.cmn-toggle-switch__htx.active {
+  background-color: transparent;
+}
+ 
+.cmn-toggle-switch__htx.active span {
+  background: none;
+}
+ 
+.cmn-toggle-switch__htx.active span::before {
+  top: 0;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+ 
+.cmn-toggle-switch__htx.active span::after {
+  bottom: 0;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+ 
+.cmn-toggle-switch__htx.active span::before,
+.cmn-toggle-switch__htx.active span::after {
+  -webkit-transition-delay: 0, 0.3s;
+          transition-delay: 0, 0.3s;
+}
+
+//--------- end toggle menu------------------------//
+
+
 .menu_top {
   padding: 0 50px;
 }
@@ -158,6 +252,10 @@
     &::after{
     display: block;      
   }
+}
+
+.home-link {
+  display: none;
 }
 
 
@@ -222,7 +320,33 @@ h1 {
     display: none;
   }
   
-
+  //--------------------vertical menu----------------//
+  
+  .cmn-toggle-switch__htx.active+.menu_top {
+    display: block;
+    position: absolute;
+    background-color: #0c112a;
+    z-index: 1;
+    height: 320px;
+    padding: 80px 200px 20px 20px;
+    
+  }
+  
+  .cmn-toggle-switch__htx.active+.menu_top>.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 220px;
+  }
+  
+  .cmn-toggle-switch__htx.active+.menu_top>.menu .home-link {
+  display: block;
+}
+  
+ 
+  
+  //--------------------vertical menu end---------------//
   
   .header__wrap {
   display: grid;
@@ -295,7 +419,7 @@ h1 {
   
   .contacts_top {
         &::before {
-          bottom: 2px;
+          bottom: 6px;
     }
   }
   
@@ -304,6 +428,18 @@ h1 {
     padding-right: 20px;
     padding-left: 20px;
   }  
+  
+  
+  .cmn-toggle-switch__htx.active+.menu_top {
+    width: 100%;
+    left: 0px;
+    padding: 80px 200px 20px 20px;
+    
+  } 
+  
+  .cmn-toggle-switch__htx.active {
+    left: -40px;
+  }
   
 }
 
