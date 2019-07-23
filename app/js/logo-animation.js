@@ -1,5 +1,31 @@
 (function animateLogo() {
-  let toggleButton = document.querySelector(".cmn-toggle-switch__htx");
+  
+  document.addEventListener('DOMContentLoaded', function() {
+ let timer = setTimeout(function(){ 
+   animateLogo();
+ },60)
+}, false);
+
+function animateLogo() {
+  
+  //alert("fddfdf");
+  
+  let logoHigh = document.getElementById('logo__high');
+  logoHigh.classList.add("active");
+
+  let logoLeft = document.getElementById('logo__left');
+  logoLeft.classList.add("active");  
+  
+  let logoRight = document.getElementById('logo__right');
+  logoRight.classList.add("active");    
+  
+  let logoText = document.getElementById('logo__text');
+  logoText.classList.add("active");  
+}
+
+  
+  
+  /*let toggleButton = document.querySelector(".cmn-toggle-switch__htx");
 
   toggleButton.addEventListener("click", toggleMenu);
 
@@ -18,6 +44,8 @@
         this.classList.add("active");   //change button to cross
         logoElement.classList.add("noActive");  //hide logo
     }
-  } 
+  }*/
+  
+  
 })();
 

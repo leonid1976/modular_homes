@@ -5,8 +5,10 @@
   }
 
 
-  .about-us-page .mySlider {
-    background-image: url('../img/about us main screenbackground.jpg') !important;
+  .about-us-page .mySlider:nth-child(6) {
+/*    background-image: url('../img/about us main screenbackground.jpg') !important;*/
+    display: block !important;
+    opacity: 1 !important;
   }
 
 .about-us-page .offer {

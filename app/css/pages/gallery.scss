@@ -5,8 +5,10 @@
   }
 
 
-  .gallery-page .mySlider {
-    background-image: url('../img/gallery main screenbackground3.jpg') !important;
+  .gallery-page .mySlider:nth-child(15) {
+/*    background-image: url('../img/gallery main screenbackground3.jpg') !important;*/
+    display: block !important;
+    opacity: 1 !important;    
   }
 
 .gallery-page  .content {

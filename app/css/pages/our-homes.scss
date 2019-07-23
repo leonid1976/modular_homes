@@ -5,8 +5,10 @@
   }
 
 
-  .our-homes-page .mySlider {
-    background-image: url('../img/our-homes main screenbackground.jpg') !important;
+  .our-homes-page .mySlider:nth-child(12) {
+/*    background-image: url('../img/our-homes main screenbackground.jpg') !important;*/
+    display: block !important;
+    opacity: 1 !important;    
   }
 
 .our-homes-page .offer {

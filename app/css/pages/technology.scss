@@ -5,8 +5,10 @@
   }
 
 
-  .technology-page .mySlider {
-    background-image: url('../img/technology main screenbackground.jpg') !important;
+  .technology-page .mySlider:nth-child(9) {
+/*    background-image: url('../img/technology main screenbackground.jpg') !important;*/
+    display: block !important;
+    opacity: 1 !important;
   }
 
 .technology-page .offer {
