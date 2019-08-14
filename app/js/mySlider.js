@@ -9,7 +9,7 @@
       sliders[0].style.opacity = 1;      
       let i = 1;
       sliders[i].style.display = "block"       
-      let delay = setInterval(changeSlide, 3000);
+      let delay = setInterval(changeSlide, 2000);
  //     sliders[i].style.opacity = 1;      
       
       function changeSlide() {

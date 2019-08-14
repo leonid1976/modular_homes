@@ -1,0 +1,135 @@
+/*======================<my-js-Slider>==================*/
+
+.slider {
+  position: relative;
+  transition: all 0.1s ease;
+}
+
+    .myslider {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .myslider__wrapper {
+      display: flex;
+      transition: transform 0.6s ease;
+      text-align: center;
+    }
+
+    .myslider__item {
+      flex: 0 0 33.333333%;
+      max-width: 33.333333%;
+      transition: none; 
+      display: block !important;
+    }
+
+
+.myslider__control {
+    position: absolute;
+    top: 38%; 
+    z-index: 2; 
+    display: block; 
+    cursor: pointer;
+    opacity: .8;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+  .myslider__control_left {
+    left: -24px;
+    height: 0;
+    width: 0;
+    border-top: 60px solid transparent;
+    border-bottom: 60px solid transparent;
+    border-right: 25px solid $c-head;
+  }
+
+  .myslider__control_right {
+    right: -24px;
+    height: 0;
+    width: 0;
+    border-top: 60px solid transparent;
+    border-bottom: 60px solid transparent;
+    border-left: 25px solid $c-head;  
+
+  }
+
+@media screen and (max-width: 1200px) {
+
+  .myslider__outer {
+    width: 738.50px;
+    margin: 0 auto;
+  }
+  
+  .myslider__item {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+}
+
+@media screen and (max-width: 860px) {
+
+  
+  .myslider__outer {
+    width: 369.25px;
+    margin: 0 auto;
+  }
+  
+  .myslider__item {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+}
+
+
+
+@media screen and (max-width: 500px) {
+
+  
+  .myslider__outer {
+    width: 320px;
+    margin: 0 auto;
+  }
+
+
+  .myslider__control_left {
+     left: -28px;
+  }
+  
+  
+  .myslider__control_right {
+    right: -28px;
+  }
+  
+}
+
+@media screen and (max-width: 410px) {
+  
+  
+    .myslider__outer {
+      width: 280px;
+      margin: 0 auto;
+    }
+  
+  
+    .myslider__control_left {
+      left: 2px;
+      border-right: 25px solid $c-head; 
+      opacity: 0.5;
+
+  }
+  
+    .myslider__control_right {
+      right: 2px;
+      border-left: 25px solid $c-head;  
+      opacity: 0.5;
+
+  }
+  
+  
+}
+
+/*======================<my-js-Slider end>==================*/

@@ -1,5 +1,4 @@
 (function() {
-  
   let iconsElements = document.getElementsByClassName('icon');
   window.addEventListener('scroll', handleScroll);
 
@@ -7,7 +6,7 @@
   let icons = Array.prototype.slice.call(iconsElements);  
   let delay = 0;
 
-  
+
   
   function handleScroll() { 
     

@@ -264,7 +264,7 @@
   }
 }
 
-.home-link:first-child {
+.menu li:first-child {
   display: none;
 }
 
@@ -353,12 +353,12 @@ h1 {
   
   
   
-  .cmn-toggle-switch__htx.active+.menu_top>.menu .home-link {
+  .cmn-toggle-switch__htx.active+.menu_top>.menu li {
     display: block;
     width: 100%;  
   }
   
-  .cmn-toggle-switch__htx.active+.menu_top>.menu .home-link a {
+  .cmn-toggle-switch__htx.active+.menu_top>.menu li a {
     display: block;
     width: 100%;  
   }

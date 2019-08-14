@@ -54,6 +54,8 @@
  <!--<meta name="viewport" content="ya-title=#4e69a2,ya-dock=fade">-->
  
  <link rel="stylesheet" href="css/main.css">
+ <link rel="stylesheet" href="css/mySlider.css">
+ 
 
 
 
@@ -178,7 +180,7 @@
           PRICE FROM<br>
           <span class="price">$ 180 000.00</span>
         </div>
-           <a href="our-homes.html" class="btn btn-cta heading__btn upper">get started</a>
+           <button  class="btn btn-cta heading__btn upper start-modal">get started</button>
       </div>
     </div> <!--homes__wrap-->  
                
@@ -224,10 +226,14 @@
             </div>
           </div> 
         </div>
-        <div class="slider">
+        
+        <div class="slider myslider__outer">
+         <div class="myslider">
           <h3 class="single-page-subtitle upper">Our other homes</h3>
-            <div class="homes__wrap">      
-             <div class="home__item">
+           
+            <div class="myslider__wrapper">
+                  
+             <div class="home__item myslider__item">
                 <div class="home__picture_wrap">
                    <div class="home__picture" style="background-image:  url('img/homes/home1.jpg')">
                      <a class="home__name" href="single-page.html">Arcadia</a>
@@ -257,7 +263,7 @@
 
             </div>      <!--home__item-end-->
 
-             <div class="home__item">
+             <div  class="home__item myslider__item">
                 <div class="home__picture_wrap">
                    <div class="home__picture" style="background-image:  url('img/homes/home2.jpg')">
                      <a class="home__name" href="single-page.html">Arcadia</a>
@@ -286,7 +292,7 @@
 
             </div>      <!--home__item-end-->
 
-             <div class="home__item">
+             <div  class="home__item myslider__item">
                 <div class="home__picture_wrap">
                    <div class="home__picture" style="background-image:  url('img/homes/home3.jpg')">
                      <a class="home__name" href="single-page.html">Arcadia</a>
@@ -315,10 +321,76 @@
                </div> <!--icons-end-->
 
             </div>      <!--home__item-end-->
+            
+            
+             <div  class="home__item myslider__item">
+                <div class="home__picture_wrap">
+                   <div class="home__picture" style="background-image:  url('img/homes/home3.jpg')">
+                     <a class="home__name" href="single-page.html">Arcadia</a>
+                   </div>
+                </div>   
 
+
+                  <!--icons-->
+                <div class="icons">
+                 <div class="icon__bedroom">
+                   <img class="icon__picture" src="img/icons/icon_bedroom.png" alt="bedroom">
+                   <span class="icon__number">3</span>
+                 </div>
+                 <div class="icon__bathroom">
+                   <img class="icon__picture" src="img/icons/icon_bathroom.png" alt="bathroom">
+                    <span class="icon__number">3</span>
+                  </div>
+                 <div class="icon__garage">
+                   <img class="icon__picture" src="img/icons/icon_garage.png" alt="garage">
+                   <span class="icon__number">1</span>
+                 </div>
+                 <div class="square">
+                   <img class="icon__picture" src="img/icons/icon_square.png" alt="square">
+                   <span class="icon__number">156 m<i class="degree">2</i></span>
+                 </div>
+               </div> <!--icons-end-->
+
+            </div>      <!--home__item-end-->
+            
+             <div  class="home__item myslider__item">
+                <div class="home__picture_wrap">
+                   <div class="home__picture" style="background-image:  url('img/homes/home3.jpg')">
+                     <a class="home__name" href="single-page.html">Arcadia</a>
+                   </div>
+                </div>   
+
+
+                  <!--icons-->
+                <div class="icons">
+                 <div class="icon__bedroom">
+                   <img class="icon__picture" src="img/icons/icon_bedroom.png" alt="bedroom">
+                   <span class="icon__number">3</span>
+                 </div>
+                 <div class="icon__bathroom">
+                   <img class="icon__picture" src="img/icons/icon_bathroom.png" alt="bathroom">
+                    <span class="icon__number">3</span>
+                  </div>
+                 <div class="icon__garage">
+                   <img class="icon__picture" src="img/icons/icon_garage.png" alt="garage">
+                   <span class="icon__number">1</span>
+                 </div>
+                 <div class="square">
+                   <img class="icon__picture" src="img/icons/icon_square.png" alt="square">
+                   <span class="icon__number">156 m<i class="degree">2</i></span>
+                 </div>
+               </div> <!--icons-end-->
+
+              </div>      <!--home__item-end--> 
+                        
+            </div>     <!--wrap-->            
+            </div>     <!--mySlider-->            
+
+        <div class="myslider__control myslider__control_left myslider__control_show" role="button"></div>
+        <div class="myslider__control myslider__control_right myslider__control_show" role="button"></div> 
+            
        </div> <!--slider-->
-       
-   </div>
+
 </section>   
     
       
@@ -332,6 +404,11 @@
 
    <script  src="js/logo-animation.js"></script>  
    <script  src="js/menu-toggle.js"></script>     
+   <script  src="js/my-js-Slider.js"></script>     
+   <script  src="js/myModalWindow.js"></script>
+   <script  src="js/main.js"></script>
+        
+   
 
 </body>
 </html>

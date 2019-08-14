@@ -1,6 +1,9 @@
 <section class="contact_us" id="contact_us">
  
-  <div class="map" style="background-image:  url('img/map_background.jpg')"></div>
+<!--  <div class="map" style="background-ima
+ge:  url('img/map_background.jpg')"></div>-->
+<div id="map"></div> 
+   
   <div class="contacts">
      <h2 class="contacts__heading">Contact us</h2>
      <div class="subheading contacts__subheading upper">Our details</div>
@@ -27,19 +30,19 @@
 				    <form action="#" method="post" class="wpcf7-form" novalidate="novalidate">
 
 				      <div class="form__field">
-				        <span class="wpcf7-form-control-wrap contact-name"><input type="text" name="contact-name" placeholder="Name"  value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" />
+				        <input type="text" name="contact-name" placeholder="Name"  value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" />
 				        <label for contaxt-name class="field__name">Name<span class="required">*</span> </label>
-				        </span>
+				        
 				      </div>
 				      <div class="form__field">
-				        <span class="wpcf7-form-control-wrap your-email"><input type="email" name="your-email" placeholder="Email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false"/>
-				        <label for your-email class="field__name">Email<span class="required">*</span> </label></span>
+                <input type="email" name="your-email" placeholder="Email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false"/>
+				        <label for your-email class="field__name">Email<span class="required">*</span> </label>
 				      </div>
 				      <div class="form__field">
-				        <span class="wpcf7-form-control-wrap your-email"><input type="tel" name="your-phone" placeholder="Phone" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" />	<label for your-email class="field__name">Phone</label></span>
+                <input type="tel" name="your-phone" placeholder="Phone" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" />	<label for your-email class="field__name">Phone</label>
 				      </div>				      
 				      <div class="form__field">
-				        <span class="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="37" rows="1" placeholder="Message" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false"></textarea>				        <label class="field__name">Message<span class="required">*</span></label></span>
+                <textarea name="your-message" cols="37" rows="1" placeholder="Message" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false"></textarea><label class="field__name">Message<span class="required">*</span></label>
 				      </div>
 				      <div>
 				        <input type="submit" value="Submit" class="upper wpcf7-form-control wpcf7-submit submit"/>
@@ -55,4 +58,6 @@
     
     
   </div> <!--contacts end-->
+  
+  
 </section>

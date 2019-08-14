@@ -52,8 +52,9 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
  <!--<meta name="viewport" content="ya-title=#4e69a2,ya-dock=fade">-->
- 
+
  <link rel="stylesheet" href="css/main.css">
+
 
 
 
@@ -72,7 +73,36 @@
    <script  src="js/mySlider.js"></script>   
    <script  src="js/logo-animation.js"></script>   
    <script  src="js/icon-animation.js"></script> 
-   <script  src="js/menu-toggle.js"></script>     
+   <script  src="js/menu-toggle.js"></script>   
+   <script  src="js/myGallery.js"></script> 
+       
+     <script>
+      var map;
+      function initMap() {
+        var popupContent = '<p class="content">Tassie Prefab Home</p>';
+        
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -42.836120, lng: 147.287851},
+          zoom: 16,
+          scrollwheel: false          
+        });
+          
+        var marker = new google.maps.Marker({position: {lat: -42.836120, lng: 147.289861}, map: map});
+        
+        var infowindow = new google.maps.InfoWindow({
+            content: popupContent});
+        
+        marker.addListener('click', function() {
+            infowindow.open(map, marker);
+        });        
+        
+   
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key= AIzaSyD8FU2EoOQQkZvy5ZrcSmlm6fpb2zOsqJA&callback=initMap"
+    async defer></script>
+  
+       
 </body>
 </html>
 
